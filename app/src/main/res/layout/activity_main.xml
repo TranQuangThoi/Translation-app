@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#DEF2F1"
+
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Translation App"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:layout_marginTop="25dp"
+        android:textColor="#17252A"
+        android:padding="8dp"
+        android:textStyle="bold"
+
+
+        />
+
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/idEdittext"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="input text"
+        android:inputType="textImeMultiLine|textMultiLine"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:gravity="top"
+        android:padding="15dp"
+
+        android:textSize="18dp"
+
+        />
+    <TextView
+        android:id="@+id/translated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="out put"
+        android:textSize="18dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        />
+
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="OR"-->
+<!--        android:textSize="28dp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:layout_margin="10dp"-->
+<!--        />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="25dp"
+        >
+        <Spinner
+
+            android:id="@+id/spinner_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:contentDescription="spinner1"
+            android:layout_gravity="center"
+
+
+
+            />
+
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/change"
+            android:contentDescription="change"
+            >
+
+        </ImageView>
+
+        <Spinner
+            android:id="@+id/spinner_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="spinner2"
+            android:layout_gravity="center"
+
+            />
+
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/mic"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/mic"
+
+        app:tint="#17252A" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hãy nói vào đây"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnTranslate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Translate"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+
+        />
+
+
+</LinearLayout>
